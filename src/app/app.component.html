@@ -1,8 +1,5 @@
 <div id="Angular APP">
    <h1>{{appname}}</h1>
    <hr/>
-   <app-box></app-box>
-   <app-box></app-box>
-   <app-box></app-box>
-   <app-box></app-box>
+   <app-box *ngFor="let x of [0,1,2,3,4]"></app-box>
 </div>
