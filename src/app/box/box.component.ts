@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './box.component.css'
 })
 export class BoxComponent {
+   mycolor:string = "aquamarine"
 
+   changeColor(event:any):void {
+     
+     this.mycolor=event.target.value
+   }
 }
