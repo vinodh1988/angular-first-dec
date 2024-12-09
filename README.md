@@ -34,7 +34,7 @@ There are three kinds of Directives
 
 
 
-       in case angular consider x as a string
+    * in case angular consider x as a string
 * Output Directive
 
    * Output Directives are  Event listener
