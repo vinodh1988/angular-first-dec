@@ -48,4 +48,23 @@ There are three kinds of Directives
 * Input Output Directive
   * Does the job of both input and output
   * should be enclose in [()]
-  
+#### Structural Directives
+
+  Structural directs either generates template or Hides/unhides template
+  All Structural directives are prefixed  with *
+
+  *ngFor it generates html
+```
+     <li *ngFor="let x in [0,1,2,3]"></li>
+
+       <li> 0 </li>
+       <li> 1 </li>
+       <li> 2 </li>
+       <li> 3 </li>
+
+```
+if show=true
+
+```
+<div class="sample" *ngIf="show"></div>
+```

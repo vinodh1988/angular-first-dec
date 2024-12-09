@@ -1,6 +1,9 @@
 <div class="box" [style.backgroundColor]="mycolor">
-    <div class="colorSelector">
-        <input type="color" (change)="changeColor($event)">
+    <div class="colorSelector" *ngIf="show" (mouseover)="changeShow()">
+        Change Colors
+    </div>
+    <div class="colorSelector" *ngIf="!show">
+        <input type="color" (change)="changeColor($event)" >
         <input type="color" [(ngModel)]="mycolor">
     </div>
 

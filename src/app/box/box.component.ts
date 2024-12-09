@@ -7,9 +7,16 @@ import { Component } from '@angular/core';
 })
 export class BoxComponent {
    mycolor:string = "#33ffd4"
+   show:boolean=true
 
    changeColor(event:any):void {
      
      this.mycolor=event.target.value
+     this.changeShow()
+   }
+
+   changeShow() {
+
+    this.show=!this.show
    }
 }
