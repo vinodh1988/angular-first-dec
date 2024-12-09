@@ -1,6 +1,7 @@
 <div class="box" [style.backgroundColor]="mycolor">
     <div class="colorSelector">
         <input type="color" (change)="changeColor($event)">
+        <input type="color" [(ngModel)]="mycolor">
     </div>
 
 </div>

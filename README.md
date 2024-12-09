@@ -44,4 +44,8 @@ There are three kinds of Directives
 
    all the events are available in angular in the form of output attributes
    click,hover,keyup,mouseover
+
 * Input Output Directive
+  * Does the job of both input and output
+  * should be enclose in [()]
+  
