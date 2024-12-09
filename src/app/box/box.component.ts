@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-box',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class BoxComponent {
    mycolor:string = "#33ffd4"
    show:boolean=true
+   @Input("box-name") name:string=""
 
    changeColor(event:any):void {
      

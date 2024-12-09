@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     appname:string = "First  Angular"
+    boxes:string[]= ["Languages","Databases","AI tools","Cloud Services"]
 }

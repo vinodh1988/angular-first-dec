@@ -68,3 +68,19 @@ if show=true
 ```
 <div class="sample" *ngIf="show"></div>
 ```
+
+
+## Parent to Child Component Communication
+
+### @Input and @Output
+
+* Parent to Childd ---> @Input
+* Child to Parent --> @Output
+
+#### Parent to child Communication
+
+   * Child needs to receive the data
+   * The receiving variable needs to be annotated with @Input
+   * That receiving variable will become an input attribute directive
+   for the child Component
+
