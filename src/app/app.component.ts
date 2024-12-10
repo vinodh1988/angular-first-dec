@@ -16,4 +16,9 @@ export class AppComponent {
       {name:"Cloud Services", values: ["Azure","AWS","GCP"]},
       {name:"AI Tools", values: ["Open AI","Hugging Face"]},
     ]
+    selectedItems:Set<String>=new Set<String>()
+
+    addSelected(item:string){
+      this.selectedItems.add(item)
+    }
 }

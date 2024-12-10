@@ -9,7 +9,9 @@
     <h3>{{name}}</h3>
     <hr/>
     <ul>
-        <li *ngFor="let x of items">{{x}}</li>
+        <li *ngFor="let x of items"
+        (click)="sendItemToParent(x)"
+        >{{x}}</li>
     </ul>
 
 </div>

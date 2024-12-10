@@ -1,4 +1,5 @@
-import { Component,Input } from '@angular/core';
+import { Component,Input,Output,EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-box',
@@ -10,6 +11,7 @@ export class BoxComponent  {
    show:boolean=true
    @Input("box-name") name:string="default"
    @Input() items:string[]=[]
+   @Output("receive") sender:EventEmitter<string>=new EventEmitter<string>()
    constructor() {
      console.log(this.name+" is the value")
    }
@@ -26,5 +28,8 @@ export class BoxComponent  {
    changeShow() {
 
     this.show=!this.show
+   }
+   sendItemToParent(data:string){
+     this.sender.emit(data)
    }
 }

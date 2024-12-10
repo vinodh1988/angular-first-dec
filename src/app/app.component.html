@@ -1,5 +1,17 @@
 <div id="Angular APP">
    <h1>{{appname}}</h1>
+   <div class="selected">
+       <h3>The selected items are</h3>
+       <ul>
+          <li *ngFor="let x of selectedItems">
+             {{x}}
+          </li>
+       </ul>
+   </div>
    <hr/>
-   <app-box *ngFor="let x of boxes" [box-name]="x.name" [items]="x.values"></app-box>
+   <app-box *ngFor="let x of boxes" 
+   [box-name]="x.name" 
+   [items]="x.values"
+   (receive)="addSelected($event)"
+   ></app-box>
 </div>
