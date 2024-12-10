@@ -1,5 +1,5 @@
 <div id="Angular APP">
    <h1>{{appname}}</h1>
    <hr/>
-   <app-box *ngFor="let x of boxes" [box-name]="x"></app-box>
+   <app-box *ngFor="let x of boxes" [box-name]="x.name" [items]="x.values"></app-box>
 </div>
